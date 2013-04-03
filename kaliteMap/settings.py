@@ -105,19 +105,11 @@ MIDDLEWARE_CLASSES = (
 
 ROOT_URLCONF = 'kaliteMap.urls'
 
-GEOIP_PATH = "/Users/Matterhorn/Downloads"
-
-GEOIP_COUNTRY = "GeoIP.dat"
-
-GEOIP_CITY = "GeoLiteCity.dat"
-
-GEOIP_LIBRARY_PATH = "/Users/Matterhorn/Desktop/kaliteMap/kaliteMap/GeoIP-1.5.0/libGeoIP/"
-
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'kaliteMap.wsgi.application'
 
 TEMPLATE_DIRS = (
-    "/Users/Matterhorn/Desktop/kaliteMap/kaliteMap/kaliteMap/templates"
+    PROJECT_PATH + "/templates"
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
