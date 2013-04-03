@@ -4,7 +4,7 @@ import re
 import pygeoip
 
 def mappage(request):
-	gic = pygeoip.GeoIP('/Users/Matterhorn/Downloads/GeoLiteCity.dat')
+	gic = pygeoip.GeoIP('./kaliteMap/data/GeoLiteCity.dat')
 	raw = requests.get("http://kalite.adhocsync.com/static/data/ips.txt").content
 	ips = re.findall(".+", raw)
 	latlng = []
